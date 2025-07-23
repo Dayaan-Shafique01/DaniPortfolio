@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 0;
+
+}
+
+header .logo-container img{
+    width: 100px;
+    border-radius: 50%;
+}
+
+header .navbar ul{
+ display: flex;
+ justify-content: center;
+ gap: 40px;
+}
+
+header .navbar ul li{
+    list-style: none;
+}
+
+header .navbar ul li a{
+    color: #392424;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header .icon-container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header .icon-container span{
+    color: #FF8601;   
+}
+
+@media screen and (max-width:1026px) {
+    /* header{
+        display: block;
+    } */
+    header .logo-container img {
+        width: 70px;
+        /* background-color: #36B5A4; */
+
+    }
+}
+
+@media screen and (max-width:946px) {
+    header .navbar ul{
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width:788px) {
+    header .navbar ul{
+        gap: 10px;
+    }
+    header .navbar ul li a{
+        font-size: 13px;
+    }
+    header .icon-container{
+        gap: 10px;
+    }
+    
+}
+
+@media screen and (max-width:582px) {
+
+    header{
+        display: block;
+        align-items: center;
+        padding: 0;
+        line-height: 40px;
+    }
+    header .logo-container{
+        background-color: #36B5A4;
+        padding: 15px 0;
+        border-bottom: 2px solid #FF8601;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }   
+    header .logo-container img{
+        /* margin-left: 230px ; */
+        place-items: center;
+        width: 130px;
+    }
+
+    header .navbar ul{
+
+        border-bottom: 2px solid #36B5A4;
+    }
+    header .navbar ul li a{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:490px){
+ header .navbar ul{
+        display: block;
+        text-align: center;
+ }
+ header .navbar ul li:hover{
+    border-bottom: 2px solid #FF8601;
+ }
+}
+
+/* Main */
+
+.skills-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* padding: 50px; */
+    margin: 0px auto;
+}
+.skills-container .details{
+    padding:  40px;
+    width: 50%;
+    text-align: center;
+}
+.skills-container .details h1,h3{
+ color: #36B5A4;
+ font-size: 45px;
+}
+
+#typewriter {
+    height: 40px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: #FF8601;
+    font-weight: 700;
+    /* margin-left: 200px; */
+  }
+
+.skills-container .my-image{
+    width: 50%;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .skills-container .my-image img{
+    width: 250px;
+  }
+
+  .skills-container  p{
+    color: #392424;
+  }
+  .skills-container button{
+    background-color: #FF8601;
+    color: #392424;
+    padding: 5px 12px;
+    font-weight: 700;
+    border-radius: 15px;
+    border: none;
+    margin-top: 30px;
+  }
+
+  @media screen and (max-width:992px) {
+    .skills-container .details h1,h3{
+        font-size: 30px;
+    }
+    #typewriter{
+        font-size: 20px;
+    }
+  }
+  @media screen and (max-width:748px){
+    .skills-container .details h1,h3{
+        font-size: 20px;
+    }
+  }
+
+  @media screen and (max-width:568px){
+    .skills-container{
+        display: block;
+    }
+    .skills-container .details{
+        margin: 0 auto;
+        width: 100%;
+    }
+    .skills-container .my-image{
+        margin: 0 auto;
+    }
+  }
+
+  @media screen and (max-width:536px){
+    .skills-container .details h1,h3{
+        font-size: 15px;
+    }
+    #typewriter{
+        font-size: 10px;
+    }
+  }
+
+.about-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF8601;
+    margin: 30px auto;
+  }
+  .about-container .detail-container{
+    color: #392424;
+    padding: 40px;
+    width: 50%;
+  }
+  .about-container .detail-container .myabout{
+    padding: 40px;
+  }
+
+  .mypic{
+    width: 50%;
+    text-align: center;
+  }
+  .mypic img{
+    width: 200px;
+    border-radius: 25%;
+    border: 2px solid #36B5A4;
+  }

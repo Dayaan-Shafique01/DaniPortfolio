@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Makeup Store</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .makeup-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .makeup-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 18px rgba(255, 0, 128, 0.2);
+    }
+
+    .makeup-img {
+      height: 200px;
+      object-fit: cover;
+    }
+    .mainhead{
+      /* background-color: #AD9C8E; */
+      background-color: #545333;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="text-white text-center py-4 mainhead">
+    <h1>Makeup Collection</h1>
+    <p>Top-quality makeup products to enhance your beauty</p>
+  </header>
+
+  <main class="container py-5">
+    <div class="row">
+      <!-- Lipstick -->
+      <div class="col-md-4 mb-4">
+        <div class="card makeup-card">
+          <img src="lipstics.jpg" class="card-img-top makeup-img" alt="Lipstick">
+          <div class="card-body">
+            <h5 class="card-title">Matte Lipstick</h5>
+            <p class="card-text">Long-lasting matte finish lipstick in various shades.</p>
+            <p class="fw-bold text-danger">$15</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Foundation -->
+      <div class="col-md-4 mb-4">
+        <div class="card makeup-card">
+          <img src="LiquidFoundation.jpg" class="card-img-top makeup-img" alt="Foundation">
+          <div class="card-body">
+            <h5 class="card-title">Liquid Foundation</h5>
+            <p class="card-text">A lightweight, blendable formula that evens out skin tone for a smooth, flawless finish.</p>
+            <p class="fw-bold text-danger">$22</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Eye Shadow -->
+      <div class="col-md-4 mb-4">
+        <div class="card makeup-card">
+          <img src="eyeshadow.jpg" class="card-img-top makeup-img" alt="Eye Shadow">
+          <div class="card-body">
+            <h5 class="card-title">Eye Shadow Palette</h5>
+            <p class="card-text">A versatile collection of rich, pigmented shades to create stunning eye looks for any occasion..</p>
+            <p class="fw-bold text-danger">$30</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- Lipstick -->
+      <div class="col-md-4 mb-4">
+        <div class="card makeup-card">
+          <img src="bluson.jpg" class="card-img-top makeup-img" alt="Lipstick">
+          <div class="card-body">
+            <h5 class="card-title">Blush On</h5>
+            <p class="card-text">A soft, buildable color that adds a natural, healthy glow to your cheeks.</p>
+            <p class="fw-bold text-danger">$15</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Foundation -->
+      <div class="col-md-4 mb-4">
+        <div class="card makeup-card">
+          <img src="concealer.jpeg" class="card-img-top makeup-img" alt="Foundation">
+          <div class="card-body">
+            <h5 class="card-title">Concealer</h5>
+            <p class="card-text">A high-coverage formula that hides dark circles, blemishes, and imperfections for a flawless look.</p>
+            <p class="fw-bold text-danger">$22</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Eye Shadow -->
+      <div class="col-md-4 mb-4">
+        <div class="card makeup-card">
+          <img src="lipgloss.jpeg" class="card-img-top makeup-img" alt="Eye Shadow">
+          <div class="card-body">
+            <h5 class="card-title">Lip Gloss</h5>
+            <p class="card-text">A shiny, non-sticky formula that adds a touch of shimmer and moisture to your lips</p>
+            <p class="fw-bold text-danger">$30</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+  </main>
+
+  <footer class="text-white text-center py-3" style="background: linear-gradient(to right, #ff1493, #ff69b4);">
+    <p class="mb-0">&copy; 2025 Makeup Store | All rights reserved</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

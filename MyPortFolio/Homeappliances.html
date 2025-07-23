@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Appliances Store</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .product-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .product-img {
+      height: 200px;
+      object-fit: cover;
+    }
+    .main{
+      /* background-color: #C1BFFF; */
+      background-color: goldenrod;
+      /* color: #928e35; */
+      color: white;
+    }
+    .card-title{
+      color: #CF6DFC;
+    }
+    body{
+ background-color: black;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="main text-center py-4">
+    <h1>Home Appliances</h1>
+    <p>Top-quality appliances for your daily needs</p>
+  </header>
+
+  <main class="container py-5">
+    <!-- Search -->
+    <div class="mb-4">
+      <input type="text" id="searchInput" class="form-control" placeholder="Search appliances...">
+    </div>
+
+    <!-- Products -->
+    <div class="row" id="productList">
+      <div class="col-md-4 mb-4 appliance">
+        <div class="card product-card">
+          <img src="im.jpg" class="card-img-top product-img" alt="Microwave">
+          <div class="card-body">
+            <h5 class="card-title">Microwave Oven</h5>
+            <p class="card-text">Efficient and quick heating with modern features.</p>
+            <p class="text-success fw-bold">$120</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4 appliance">
+        <div class="card product-card">
+          <img src="refrigerator.jpg" class="card-img-top product-img" alt="Refrigerator">
+          <div class="card-body">
+            <h5 class="card-title">Refrigerator</h5>
+            <p class="card-text">Energy-efficient cooling for your food and drinks.</p>
+            <p class="text-success fw-bold">$350</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4 appliance">
+        <div class="card product-card">
+          <img src="washingmachine.jpg" class="card-img-top product-img" alt="Washing Machine">
+          <div class="card-body">
+            <h5 class="card-title">Washing Machine</h5>
+            <p class="card-text">Automatic machine with smart wash technology.</p>
+            <p class="text-success fw-bold">$220</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row" id="productList">
+      <div class="col-md-4 mb-4 appliance">
+        <div class="card product-card">
+          <img src="tv.jpg" class="card-img-top product-img" alt="Microwave">
+          <div class="card-body">
+            <h5 class="card-title">Television</h5>
+            <p class="card-text">Efficient and smart Look</p>
+            <p class="text-success fw-bold">$420</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4 appliance">
+        <div class="card product-card">
+          <img src="dispenser.jpeg" class="card-img-top product-img" alt="Refrigerator">
+          <div class="card-body">
+            <h5 class="card-title">Dispenser</h5>
+            <p class="card-text">Energy-efficient cooling for your requirement drinks.</p>
+            <p class="text-success fw-bold">$550</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4 appliance">
+        <div class="card product-card">
+          <img src="juicer.jpg" class="card-img-top product-img" alt="Washing Machine">
+          <div class="card-body">
+            <h5 class="card-title">Juicer Blender</h5>
+            <p class="card-text">Automatic machine with fast work to make your healthy drink.</p>
+            <p class="text-success fw-bold">$820</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row" id="productList">
+      <div class="col-md-4 mb-4 appliance">
+        <div class="card product-card">
+          <img src="dryer.jpg" class="card-img-top product-img" alt="Microwave">
+          <div class="card-body">
+            <h5 class="card-title">Dryer</h5>
+            <p class="card-text">Efficient and quick dryer with modern features.</p>
+            <p class="text-success fw-bold">$520</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4 appliance">
+        <div class="card product-card">
+          <img src="kettle.jpeg" class="card-img-top product-img" alt="Refrigerator">
+          <div class="card-body">
+            <h5 class="card-title">Electric Kettle</h5>
+            <p class="card-text">Energy-efficient to make your morning tea.</p>
+            <p class="text-success fw-bold">$250</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4 appliance">
+        <div class="card product-card">
+          <img src="dishwasher.jpeg" class="card-img-top product-img" alt="Washing Machine">
+          <div class="card-body">
+            <h5 class="card-title">DishWasher</h5>
+            <p class="card-text">Automatic machine with smart wash technology to help you in your hectic day.</p>
+            <p class="text-success fw-bold">$220</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+  </main>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">&copy; 2025 Home Appliances | All rights reserved</p>
+  </footer>
+
+  <script>
+    const searchInput = document.getElementById('searchInput');
+    const products = document.querySelectorAll('.appliance');
+
+    searchInput.addEventListener('keyup', () => {
+      const searchTerm = searchInput.value.toLowerCase();
+      products.forEach(product => {
+        const title = product.querySelector('.card-title').textContent.toLowerCase();
+        product.style.display = title.includes(searchTerm) ? 'block' : 'none';
+      });
+    });
+  </script>
+</body>
+
+</html>
